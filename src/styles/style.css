@@ -1,0 +1,22 @@
+html {
+    font-size: 62.5%; /* 1rem == 10px */
+}
+
+body {
+    font-size: 2rem; /* 16px en lugar de 1em */
+    line-height: 1.8rem; /* 14px en lugar de 1.4em */
+}
+
+@media screen and (min-width: 20em) {
+    body {
+        font-size: calc(1.6rem + (1.3125 - 1.6) * ((100vw - 20em) / (80 - 20)));
+        line-height: calc(1.4rem + (1.8 - 1.4) * ((100vw - 20em) / (80 - 20)));
+    }
+}
+
+@media (min-width: 80em) {
+    body {
+        font-size: 1.6rem; /* Tamaño predeterminado de 16px */
+        line-height: 1.8rem; /* 18px en lugar de 1.8em */
+    }
+}
