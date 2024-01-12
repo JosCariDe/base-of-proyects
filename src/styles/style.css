@@ -21,3 +21,9 @@ body {
         line-height: 1.8rem; /* 18px en lugar de 1.8em */
     }
 }
+
+@supports (font-size-adjust: 1) {
+    article {
+        font-size-adjust: 0.5;
+    }
+}
