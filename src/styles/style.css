@@ -62,3 +62,6 @@ article p {
     margin: calc(1ex / 0.32) 0;
 }
 
+p {
+    width: clamp(45ch, 50%, 75ch);
+  }
